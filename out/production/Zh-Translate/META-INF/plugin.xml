@@ -1,0 +1,43 @@
+<idea-plugin version="2">
+  <id>zh-translate-en</id>
+  <name>Zh-Translate-En</name>
+  <version>1.0</version>
+  <vendor email="wo9shihehaiying@163.com" url="https://github.com/hyhe">hyhe</vendor>
+
+  <description><![CDATA[
+      Android Studio Plugin. Translate chinese to english.<br>
+      <h3>How to Use?</h3>
+      <ul>
+      <li>Open Tools Menu or (alt+T)</li>
+      <li>Input Chinese</li>
+      <li>Press enter</li>
+      <li>Enter again will disappear panel</li>
+      </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Version 1.0<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ZhTranslate" class="ZhTranslate" text="ZhTranslate" description="Chinease translate English">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
+
+    </action>
+  </actions>
+
+</idea-plugin>
