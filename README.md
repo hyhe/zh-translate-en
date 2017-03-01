@@ -1,1 +1,1 @@
-### android studio plugin,translate chinase to english
+### android studio plugin,translate chinese to english
